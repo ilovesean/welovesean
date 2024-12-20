@@ -1,118 +1,47 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-header h1 {
-    margin-bottom: 0.5rem;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 20px;
-    max-width: 1200px;
+/* Chat Section */
+#chat {
+    max-width: 800px;
     margin: 0 auto;
-}
-
-#highlight {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-#community {
-    background: #f9f9f9;
     padding: 20px;
+    background: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
 }
 
-#comment-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+#chat-box {
+    height: 400px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-#comment-form input, #comment-form textarea {
+#chat-input {
+    width: 80%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-right: 10px;
 }
 
-#comment-form button {
-    padding: 10px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
+.chat-message {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
 }
 
-#comment-form button:hover {
-    background-color: #0056b3;
-}
-
-#comments-section {
-    margin-top: 20px;
-}
-
-.comment {
-    background: #fff;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
+/* Leaderboard Section */
+.leaderboard-table {
     width: 100%;
-    bottom: 0;
-    transition: background-color 0.3s, color 0.3s;
+    border-collapse: collapse;
+    margin: 20px 0;
 }
 
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 5px;
+.leaderboard-table th, .leaderboard-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
 }
 
-button:hover {
-    background-color: #0056b3;
+.leaderboard-table th {
+    background-color: #f4f4f4;
 }
-
