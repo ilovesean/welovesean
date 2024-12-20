@@ -1,1 +1,66 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILOVESEAN - Leaderboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightmode.css" id="theme-style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>ILOVESEAN</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="profiles.html">Profiles</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="chat.html">Chat</a></li>
+            </ul>
+        </nav>
+        <button onclick="toggleTheme()"><i class="fas fa-adjust"></i> Toggle Dark Mode</button>
+    </header>
+    <main>
+        <section id="leaderboard">
+            <h2>Leaderboard</h2>
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Leaderboard entries -->
+                    <tr>
+                        <td>1</td>
+                        <td>PlayerOne</td>
+                        <td>1500</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>GamerGirl</td>
+                        <td>1400</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>ProGamer</td>
+                        <td>1300</td>
+                    </tr>
+                    <!-- More leaderboard entries -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ILOVESEAN. All rights reserved.</p>
+    </footer>
+    <div id="fps-counter" style="position:fixed;top:10px;left:10px;color:red;"></div>
+    <script src="js/fps.js"></script>
+    <script src="js/tabclocker.js"></script>
+    <script src="js/darkmode.js"></script>
+</body>
+</html>
