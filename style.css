@@ -1,47 +1,159 @@
-/* Chat Section */
-#chat {
-    max-width: 800px;
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 85%;
     margin: 0 auto;
     padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #f4f4f4;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+header button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #0056b3;
+}
+
+/* Main Section Styling */
+main {
+    padding: 20px 0;
+}
+
+/* Highlight Section */
+#highlight {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#highlight .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+#highlight .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Games List Section */
+#games-list {
+    margin: 50px 0;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.game-card {
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
 }
 
-#chat-box {
-    height: 400px;
-    overflow-y: scroll;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-#chat-input {
-    width: 80%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-
-.chat-message {
-    padding: 5px;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Leaderboard Section */
-.leaderboard-table {
+.game-card img {
     width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+    height: auto;
 }
 
-.leaderboard-table th, .leaderboard-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
+.game-card h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
 }
 
-.leaderboard-table th {
-    background-color: #f4f4f4;
+.game-card p {
+    color: #666;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.game-card .btn-secondary {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.game-card .btn-secondary:hover {
+    background-color: #777;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
