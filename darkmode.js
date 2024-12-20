@@ -6,4 +6,3 @@ function toggleTheme() {
         themeStyle.setAttribute('href', 'css/lightmode.css');
     }
 }
-
