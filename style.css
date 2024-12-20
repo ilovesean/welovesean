@@ -41,6 +41,10 @@ header nav ul {
     gap: 20px;
 }
 
+header nav ul li {
+    display: inline;
+}
+
 header nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -156,4 +160,52 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+
+/* Chat Section */
+#chat {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#chat-box {
+    height: 400px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#chat-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.chat-message {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Leaderboard Section */
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.leaderboard-table th, .leaderboard-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.leaderboard-table th {
+    background-color: #f4f4f4;
 }
