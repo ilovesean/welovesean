@@ -7,39 +7,46 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightmode.css" id="theme-style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="images/favicon.png">
 </head>
 <body>
     <header>
-        <h1>ILOVESEAN</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="profiles.html">Profiles</a></li>
-                <li><a href="leaderboard.html">Leaderboard</a></li>
-                <li><a href="chat.html">Chat</a></li>
-            </ul>
-        </nav>
-        <button onclick="toggleTheme()"><i class="fas fa-adjust"></i> Toggle Dark Mode</button>
+        <div class="container">
+            <h1>ILOVESEAN</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="profiles.html">Profiles</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                    <li><a href="chat.html">Chat</a></li>
+                </ul>
+            </nav>
+            <button onclick="toggleTheme()"><i class="fas fa-adjust"></i> Toggle Dark Mode</button>
+        </div>
     </header>
     <main>
         <section id="chat">
-            <h2>Game Chat</h2>
-            <div id="chat-box">
-                <!-- Chat messages will appear here -->
+            <div class="container">
+                <h2>Game Chat</h2>
+                <div id="chat-box">
+                    <!-- Chat messages will appear here -->
+                </div>
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button onclick="sendMessage()">Send</button>
             </div>
-            <input type="text" id="chat-input" placeholder="Type a message...">
-            <button onclick="sendMessage()">Send</button>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 ILOVESEAN. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 ILOVESEAN. All rights reserved.</p>
+        </div>
     </footer>
     <div id="fps-counter" style="position:fixed;top:10px;left:10px;color:red;"></div>
     <script src="js/fps.js"></script>
     <script src="js/tabclocker.js"></script>
     <script src="js/darkmode.js"></script>
+    <script src="js/tabcloaker.js"></script>
     <script src="js/chat.js"></script>
 </body>
 </html>
-
