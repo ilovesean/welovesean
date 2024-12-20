@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILOVESEAN - Profiles</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightmode.css" id="theme-style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>ILOVESEAN</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="profiles.html">Profiles</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="chat.html">Chat</a></li>
+            </ul>
+        </nav>
+        <button onclick="toggleTheme()"><i class="fas fa-adjust"></i> Toggle Dark Mode</button>
+    </header>
+    <main>
+        <section id="profiles">
+            <h2>User Profiles</h2>
+            <!-- Add user profile cards -->
+            <div class="profile-card">
+                <img src="images/user1.jpg" alt="User 1">
+                <h3>User Name 1</h3>
+                <p>Bio of User 1.</p>
+                <a href="#" class="btn btn-secondary">View Profile</a>
+            </div>
+            <div class="profile-card">
+                <img src="images/user2.jpg" alt="User 2">
+                <h3>User Name 2</h3>
+                <p>Bio of User 2.</p>
+                <a href="#" class="btn btn-secondary">View Profile</a>
+            </div>
+            <!-- More profile cards -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ILOVESEAN. All rights reserved.</p>
+    </footer>
+    <div id="fps-counter" style="position:fixed;top:10px;left:10px;color:red;"></div>
+    <script src="js/fps.js"></script>
+    <script src="js/tabclocker.js"></script>
+    <script src="js/darkmode.js"></script>
+</body>
+</html>
 
