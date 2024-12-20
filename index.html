@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILOVESEAN - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightmode.css" id="theme-style">
+</head>
+<body>
+    <header>
+        <h1>ILOVESEAN</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button onclick="toggleTheme()">Toggle Dark Mode</button>
+    </header>
+    <main>
+        <section id="highlight">
+            <h2>Welcome to ILOVESEAN</h2>
+            <p>Your ultimate gaming destination!</p>
+        </section>
+        <section id="games-list">
+            <h2>Popular Games</h2>
+            <!-- Add game links here -->
+        </section>
+        <section id="community">
+            <h2>Community</h2>
+            <form id="comment-form">
+                <input type="text" id="username" placeholder="Your Name" required>
+                <textarea id="comment" placeholder="Your Comment" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="comments-section"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ILOVESEAN. All rights reserved.</p>
+    </footer>
+    <div id="fps-counter" style="position:fixed;top:10px;left:10px;color:red;"></div>
+    <script src="js/fps.js"></script>
+    <script src="js/tabclocker.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/comments.js"></script>
+</body>
+</html>
 
